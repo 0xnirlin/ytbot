@@ -10,9 +10,6 @@ from pydantic import BaseModel
 # importing the module
 from pytube import YouTube
 
-# where to save
-SAVE_PATH = "D:/"  # to_do
-
 
 app = FastAPI()
 
