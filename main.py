@@ -18,9 +18,7 @@ app = FastAPI()
 
 s3 = boto3.resource("s3")
 # //allowing the origin
-origins = [
-    *
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
