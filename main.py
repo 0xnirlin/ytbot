@@ -19,8 +19,7 @@ app = FastAPI()
 s3 = boto3.resource("s3")
 # //allowing the origin
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
+    *
 ]
 
 app.add_middleware(
